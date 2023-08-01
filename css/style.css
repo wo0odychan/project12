@@ -311,10 +311,13 @@
     background: url(../images/nt_bg.png)no-repeat center center/cover;
 }
 
+.main_notice .content {
+    background: #ffffff91;
+}
+
 .main_notice .inner {
     display: flex;
     gap: 48px;
-    background: #ffffff91;
     overflow: hidden;
 }
 
