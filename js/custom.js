@@ -15,20 +15,6 @@ $(function () {
         })
     });
 
-    $('.right_slide').slick({
-        arrows: false,
-        autoplay: true,
-        speed: 1000,
-        pauseOnHover: true,
-        slidesToShow: 3,
-    });
-
-    $('.main_notice .arrows .left').on('click', function () {
-        $('.right_slide').slick('slickPrev')
-    });
-    $('.main_notice .arrows .right').on('click', function () {
-        $('.right_slide').slick('slickNext')
-    });
 
 
 
