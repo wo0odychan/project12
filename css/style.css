@@ -33,7 +33,7 @@
     border: 1px solid #222;
     border-radius: 30px;
     padding: 5px 15px;
-    line-height: 15px;
+    line-height: 20px;
 }
 
 .btn_wc {
@@ -95,6 +95,7 @@
     position: relative;
     background: url(../images/main.png) no-repeat center center/cover;
     height: 650px;
+    overflow: hidden;
 }
 
 .main_visual .slogan {
@@ -177,7 +178,7 @@
 }
 
 .main_gell {
-    background: linear-gradient(-150deg, #fff 55%, #F9F2DE 45%);
+    background: linear-gradient(-150deg, #fff 60%, #F9F2DE 40%);
 
 }
 
@@ -384,7 +385,6 @@
     padding: 20px 20px 30px 20px;
     border-radius: 15px;
     overflow: hidden;
-
 }
 
 .main_notice .box02 {
@@ -516,86 +516,34 @@
 
     .btn {
         width: 200px;
-        height: 40px;
-        text-align: center;
     }
 
     .btn a {
-        display: block;
-        border: 1px solid #222;
-        border-radius: 30px;
         padding: 10px 15px;
         line-height: 15px;
     }
 
     .btn_s {
-        width: 150px;
         height: 15px;
-        text-align: center;
-        margin: 0 auto;
     }
 
-    .btn_s a {
-        display: block;
-        border: 1px solid #222;
-        border-radius: 30px;
-        padding: 5px 15px;
-        line-height: 10px;
-    }
-
-    .btn_wc {
-        width: 220px;
-        height: 40px;
-        text-align: center;
-    }
-
-    .btn_wc a {
-        display: block;
-        color: #fff;
-        border: 1px solid #fff;
-        border-radius: 30px;
-        padding: 10px 25px;
-        line-height: 20px;
-    }
-
-    .header {
-        position: sticky;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        background: var(--wc);
-        border-bottom: 1px solid #f9f9f9;
-        white-space: nowrap;
-    }
-
-    .header .inner {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100px;
-        transition: 0.5s;
-    }
-
-    .header.on .inner {
-        height: 80px;
-    }
 
     .header .gnb {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 245px;
+        width: 250px;
         height: 100vh;
         z-index: 999;
         background: var(--mc);
+
         transition: 0.5s;
 
     }
 
     .header .gnb.on {
         left: 0;
-
+        box-shadow: 0 0 350px #6666667a;
     }
 
     .header .gnb .main_menu {
@@ -643,26 +591,23 @@
         z-index: 1001;
         padding: 5px;
         font-size: 24px;
-        color: #111;
+        color: #222;
     }
 
     .mobile i {
         padding: 10px;
         font-size: 30px;
-        color: #111;
+        color: #222;
 
     }
 
 
 
     .main_visual {
-        position: relative;
-        background: url(../images/main.png) no-repeat center center/cover;
         height: 500px;
     }
 
     .main_visual .slogan {
-        position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -670,73 +615,37 @@
         text-align: center;
     }
 
-    .main_visual .slogan h2 {
-        font-size: 44px;
-        font-weight: 800;
-        margin: 0 0 12px 0;
-
-    }
-
-    .main_visual .slogan p {
-        font-weight: 500;
-    }
 
     .main_cake {
         background: linear-gradient(120deg, #fff 55%, #F9F2DE 45%);
     }
 
     .main_cake .inner {
-        display: flex;
         flex-direction: column;
-        gap: 30px;
-    }
-
-    .main_cake .inner>* {
-        flex: 1;
     }
 
     .main_cake .img_box {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         padding: 50px 20px 20px 20px;
-        margin: 0 20px 0 0;
-        background: var(--cc);
-        border-radius: 20px;
     }
 
     .main_cake .img_box span {
         font-size: 36px;
-        font-weight: 800;
-        color: var(--wc);
-        text-align: center;
         margin: 0 0 10px 0;
     }
 
-    .main_cake .img_box img {
-        border-radius: 10px;
-        margin: 10px;
-    }
 
     .main_cake .tit {
-        align-self: center;
         width: 100%;
-
     }
 
     .main_cake .tit h2 {
-        display: inline-block;
-        font-size: 24px;
-        color: var(--wc);
-        background: var(--bc);
-        padding: 2px;
         margin: 0 0 20px 2px;
     }
 
     .main_cake .tit p {
         font-size: 20px;
         margin: 0 0 32px 2px;
-        line-height: 1.2;
     }
 
     .main_cake .tit strong {
@@ -744,7 +653,6 @@
     }
 
     .main_cake .tit .bt {
-        display: flex;
         gap: 30px;
     }
 
@@ -754,16 +662,9 @@
     }
 
     .main_gell .inner {
-        position: relative;
-        display: flex;
         flex-direction: column;
-        gap: 50px;
         height: 100%;
 
-    }
-
-    .main_gell .inner>* {
-        flex: 1;
     }
 
     .main_gell figure {
@@ -776,7 +677,6 @@
     }
 
     .main_gell .box01 {
-        top: 0;
         right: auto;
     }
 
@@ -784,85 +684,32 @@
         top: 0;
     }
 
-    .main_gell .tit {
-        align-self: center;
-    }
-
     .main_gell .tit h2 {
-        display: inline-block;
-        font-size: 24px;
-        color: var(--wc);
-        background: var(--bc);
-        padding: 2px;
         margin: 0 0 20px 2px;
     }
 
     .main_gell .tit p {
         font-size: 20px;
         margin: 0 0 32px 2px;
-        line-height: 1.2;
     }
 
-    .main_gell .tit strong {
-        font-weight: 800;
-    }
-
-
-    .main_apr {
-        background: url(../images/ap_bg.jpg) no-repeat center center/cover;
-    }
-
-    .main_apr .content {
-        background: var(--ac);
-    }
 
     .main_apr .content .img_box {
-        display: flex;
         flex-direction: column;
         gap: 32px;
         padding: 40px;
     }
 
-    .main_apr .content .img_box>* {
-        flex: 1;
-    }
-
-    .main_apr img {
-        width: 100%;
-    }
-
-    .main_apr .tit {
-        color: var(--wc);
-        text-align: center;
-        align-self: center;
-    }
 
     .main_apr .tit h2 {
         font-size: 24px;
         margin: 0 0 40px 0;
-        line-height: 1.2;
     }
 
-    .main_apr .tit strong {
-        font-weight: 800;
-    }
 
-    .main_apr .tit .btn_wc {
-        margin: 0 auto;
-    }
-
-    .main_grn .tit {
-        text-align: center;
-        margin: 0 0 32px 0;
-    }
 
     .main_grn .tit h2 {
-        display: inline-block;
-        padding: 2px;
-        margin: 0 0 16px 0;
         font-size: 36px;
-        color: var(--wc);
-        background: var(--gc);
     }
 
     .main_grn .tit p {
@@ -870,24 +717,11 @@
     }
 
     .main_grn .content {
-        display: flex;
         flex-direction: column;
-        gap: 10px;
     }
 
     .main_grn .content .img_box {
-        position: relative;
-        overflow: hidden;
         border-radius: 20px;
-    }
-
-    .main_grn .content .img_box figure {
-        border-radius: 20px;
-        overflow: hidden;
-    }
-
-    .main_grn .content .img_box figure img {
-        transition: 0.5s;
     }
 
     .main_grn .content .img_box:hover figure img {
@@ -895,72 +729,36 @@
     }
 
     .main_grn .content .img_box .cover {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
         top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
         height: auto;
         background: var(--wc);
         border-radius: 0;
-        text-align: center;
-        justify-content: center;
         opacity: 1;
         padding: 0 0 4px 0;
         margin: 0 16px;
-
-        transition: 0.5s;
-    }
-
-    .main_grn .content .img_box:hover .cover {
-        opacity: 1;
     }
 
     .main_grn .content .img_box .cover span {
         font-size: 16px;
         line-height: 1.4;
         padding: 4px 0;
-        margin: 0 0 14px 0;
-    }
-
-    .main_grn .content .img_box .cover strong {
-        font-weight: 800;
-    }
-
-    .main_grn .content .img_box .cover .btn {
-        margin: 0 auto;
-    }
-
-
-
-    .main_notice {
-        background: var(--mc)
+        margin: 0 0 8px 0;
     }
 
 
     .main_notice .inner {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
 
     .main_notice .tit {
-        align-self: center;
         margin: 0 0 20px 2px;
     }
 
 
     .main_notice .tit h2 {
-        display: inline-block;
         font-size: 36px;
-        font-weight: 800;
-        padding: 2px;
         margin: 0 0 20px 0;
-        color: var(--wc);
-        background: var(--bc);
-
     }
 
     .main_notice .tit p {
@@ -969,128 +767,11 @@
 
 
     .main_notice .img_box {
-        background: var(--wc);
-        padding: 20px 20px 30px 20px;
-        border-radius: 15px;
-        overflow: hidden;
-
+        padding: 20px 20px 40px 20px;
     }
 
-    .main_notice .box02 {
-        background: var(--mc);
-        border: 2px solid #fff;
-    }
-
-    .main_notice .img_box figure {
-        border-radius: 10px;
-        margin: 0 0 24px 0;
-    }
-
-    .main_notice .img_box figure img {
-        width: 100%;
-
-    }
-
-    .main_notice .txt {
-        text-align: center;
-    }
-
-    .main_notice .txt span {
-        display: block;
-        font-size: 24px;
-        font-weight: 800;
-        margin: 0 0 16px 0;
-    }
-
-    .main_notice .txt p {
-        font-size: 16px;
-        margin: 0 0 30px 0;
-    }
-
-    .main_notice .txt strong {
-        font-weight: 800;
-    }
-
-
-    .footer {
-        background: #f9f9f9;
-        padding: 30px 0;
-    }
 
     .footer .inner {
-        display: flex;
         flex-direction: column;
-        gap: 24px;
-    }
-
-    .footer .inner>* {
-        flex: 1;
-    }
-
-    .footer .left .customer {
-        display: inline-block;
-        border-bottom: 1px solid #999;
-        color: #444;
-        margin: 0 0 12px 0;
-        padding: 0 10px 0 0;
-    }
-
-    .footer .left .customer li {
-        margin: 0 0 12px 0;
-    }
-
-    .footer .left .adr {
-        font-size: 14px;
-        color: #444;
-    }
-
-    .footer .left .customer li span {
-        color: #777;
-    }
-
-    .footer .center {
-        align-self: center;
-    }
-
-    .footer .center .sns {
-        display: flex;
-        gap: 24px;
-        justify-content: center;
-    }
-
-    .footer .center .sns_box {
-        position: relative;
-    }
-
-    .footer .sns figure img {
-        border-radius: 50%;
-    }
-
-    .footer .sns_box .cover {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #f9f2dea9;
-        padding: 2px;
-    }
-
-
-    .footer .map_box {
-        position: relative;
-        padding: 0 0 56.25% 0;
-        background: var(--wc);
-    }
-
-    .footer .map_box ._map {
-        position: absolute;
-        inset: 0 0 0 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .footer .map_box .root_daum_roughmap .wrap_map {
-        position: relative;
-        height: calc(100% - 1px);
     }
 }
